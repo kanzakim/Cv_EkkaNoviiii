@@ -1,0 +1,126 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #2c3e50;
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cv-container:hover {
+  transform: scale(1.01);
+}
+
+.cv-header {
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 20px;
+}
+
+.cv-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cv-header img:hover {
+  transform: scale(1.05);
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.cv-header p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.cv-section {
+  margin-top: 30px;
+}
+
+.cv-section h2 {
+  color: #3498db;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.cv-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cv-card:hover {
+  background: #eef6fb;
+}
+
+.cv-card:active {
+  transform: scale(0.98);
+  background-color: #d6eaf8;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skills li {
+  background: #eaf2f8;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.skills li:hover {
+  background: #d6eaf8;
+}
+
+.skills li:active {
+  transform: scale(0.95);
+  background-color: #cfe2f3;
+}
